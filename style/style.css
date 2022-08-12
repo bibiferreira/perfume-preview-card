@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
 body {
-  background-color: hsl(30, 38%, 92%);
+  background-color: #ffefe0;
 }
 
 .container {
@@ -18,23 +18,38 @@ body {
 .info {
   padding: 30px;
   justify-content: center;
+  flex-basis: 45%;
+}
+
+.info-content * {
+  width: 100%;
+}
+
+.image {
+  flex-basis: 55%;
 }
 
 img {
-  width: 350px;
+  width: 100%;
 }
 
 p {
   color: rgb(133, 129, 129);
   font-family: 14px;
   font-family: 'montserrat';
-  line-height: 1.5;
+  line-height: 1.3;
+}
+
+.price {
+  display: flex;
+  align-items: center;
 }
 
 #discount {
   color: hsl(158, 36%, 37%);
   font-family: 'fraunces';
   font-size: 30px;
+  line-height: 1;
 }
 
 h3 {
@@ -49,6 +64,7 @@ h1 {
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
+  justify-content: left;
 }
 
 span {
@@ -61,6 +77,7 @@ span {
 
 button {
   width: 250px;
+  height: 50px;
   padding: 14px;
   background-color: hsl(158, 36%, 37%);
   color: #fff;
@@ -71,11 +88,23 @@ button {
   cursor: pointer;
 }
 
+button:active {
+  background-color: #1a3f31;
+}
+
+.cart-icon {
+  width: 12px;
+  padding-right: 7px;
+}
+
 .attribution {
   margin: 40px;
   display: flex;
   justify-content: center;
   font-family: 'montserrat';
   font-size: 12px;
+}
 
+.attribution a {
+  color: rgb(133, 129, 129);
 }
